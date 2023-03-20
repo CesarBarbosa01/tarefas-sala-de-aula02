@@ -2,7 +2,7 @@
   "name": "tarefas-sala-de-aula02",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "node.js",
   "scripts": {
     "dev": "node Node\node.js",
     "test": "echo \"Error: no test specified\" && exit 1"
