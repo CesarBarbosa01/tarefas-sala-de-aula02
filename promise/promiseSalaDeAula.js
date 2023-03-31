@@ -20,5 +20,5 @@ async function pegarFilmes(f) {
     })          
 }
 
-pegarFilmes('Animação').then(resposta => console.log(resposta)).catch(error => console.error(error))
+pegarFilmes('Ficcção Científica').then(resposta => console.log(resposta)).catch(error => console.error(error))
 
