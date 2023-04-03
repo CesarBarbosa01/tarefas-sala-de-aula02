@@ -1,21 +1,15 @@
-const express = require("express")
-const app = express();
+const express = require('express')
+const server = express()
 
-app.listen(3111, () => {
-    console.log("O servidor está rodando...")
+server.get('/', (req, res) => {
+    res.send('<h1>Home<h2>')
 })
 
-app.use(express.json())
-
-
-let info = []
-// receber dados
-app.get("/meus-dados", (req, res) => {
-    res.json(info)
-})
-// enviar informações
-app.post("/meus-dados", (req, res) => {
-    const novodados = res.body
+server.get('/olamundo', (req, res) => {
+    res.send('<h1>Olá mundo<h1)')
 })
 
-
+server.listen(3111, () => {
+    console.log('Servidor funcionando em http://localhost:3111')
+    console.log('Pra desligar nosso servidor: ctrl + c')
+})
