@@ -6,7 +6,7 @@ server.get('/', (req, res) => {
 })
 
 server.get('/olamundo', (req, res) => {
-    res.send('<h1>Olá mundo<h1)')
+    res.send('<h1>olá mundo<h1/>')
 })
 
 server.listen(3111, () => {
